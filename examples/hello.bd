@@ -1,0 +1,7 @@
+# hello.bd - Welcome to Bedrock!
+
+say "Hello from Minecraft Bedrock Edition Programming Language!"
+var player = "@p"
+give player "diamond_sword" 1
+effect player "speed" 30 2
+print "Player setup completed!"

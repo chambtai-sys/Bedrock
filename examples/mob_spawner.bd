@@ -1,0 +1,15 @@
+# mob_spawner.bd - Spawn Minecraft Mobs with Parameters
+
+function spawn_horde(mob_name, count) {
+    say "Summoning " + count + " " + mob_name + "..."
+    var i = 0
+    repeat count {
+        i = i + 1
+        summon mob_name ~ ~ ~
+        print "Spawned " + mob_name + " #" + i
+    }
+}
+
+spawn_horde("zombie", 3)
+spawn_horde("creeper", 2)
+say "Mob horde spawned successfully!"
