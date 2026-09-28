@@ -1,0 +1,14 @@
+# house_builder.bd - Build a Bedrock Shelter
+
+function build_wall(x1, y1, z1, x2, y2, z2, block_type) {
+    say "Building wall..."
+    fill x1 y1 z1 x2 y2 z2 block_type
+}
+
+say "Constructing Bedrock shelter..."
+
+fill ~0 ~0 ~0 ~10 ~5 ~10 "stone_bricks"
+fill ~1 ~1 ~1 ~9 ~4 ~9 "air"
+fill ~5 ~1 ~0 ~5 ~2 ~0 "oak_door"
+
+say "Bedrock shelter built successfully!"
